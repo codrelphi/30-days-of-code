@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 #-*- coding: utf-8 -*-
+#==============================================================
+#author: Chancerel Codjovi (aka codrelphi)
+#date: 2019-09-04        
+#source: hackerrank.com/challenges/30-hello-world/problem    
+#==============================================================
 
 """
 Sample Input
