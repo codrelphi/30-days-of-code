@@ -10,6 +10,7 @@ import sys
 if __name__ == "__main__":
     phoneBook = {}
     queries = []
+    cpt = 0
     n = int(input())
     if n < 1 or n > 100000:
         print("Error !")
@@ -23,13 +24,18 @@ if __name__ == "__main__":
             print("Error !")
             exit()
         phoneBook[name] = phoneNumber
-
-    for i in range(n):
+    while True:
         try:
             query = input()
-            if query in phoneBook:
-                print("{}={}".format(query, phoneBook[query]))
-            else:
-                print("Not found")
-        except EOFError as error:
+            if len(query) is 0:
+                 break
+            queries.append(query)
+            cpt += 1
+        except EOFError as er:
             break
+    
+    for query in queries:
+        if query in phoneBook:
+            print("{}={}".format(query, phoneBook[query]))
+        else:
+            print("Not found")
