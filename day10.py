@@ -5,7 +5,6 @@
 # date: 2019-09-14
 # source: https://www.hackerrank.com/challenges/30-binary-numbers/problem
 #=================================================================================
-import sys
 
 if __name__ == "__main__":
     nbr = nbr_temp = 0
