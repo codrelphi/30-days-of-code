@@ -26,7 +26,6 @@ if __name__ == "__main__":
                 nbr = nbr_temp
             nbr_temp = 0
         #print("*", i, "=>", binary_str[i], "-nbr_temp", nbr_temp, "-nbr", nbr, "*")
-    if nbr_temp > nbr:
-        nbr = nbr_temp
+    nbr = max(nbr, nbr_temp)
 
     print(nbr)
