@@ -6,12 +6,6 @@
 # source: https://www.hackerrank.com/challenges/30-2d-arrays/problem
 #=================================================================================
 
-def values_verification(*args):
-    v = True
-    for i in args:
-        if i not in  range(-9, 10):
-            v = False
-    return v
 
 if __name__ == "__main__":
     """matrix = [
@@ -24,15 +18,6 @@ if __name__ == "__main__":
             ]"""
     matrix = []
     sum = []
-    for i in range(6):
-        entry = [int(j) for j in input().strip().split(' ')]
-        if len(entry) != 6:
-            print("Error: Enter 6 space-separated values !")
-            exit()
-        if values_verification(*entry) == False:
-            print("Error: -9 <= value <= 9 !")
-            exit()
-        matrix.append(entry)
 
     for i in range(6):
         for j in range(6):
