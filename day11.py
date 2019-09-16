@@ -18,9 +18,8 @@ if __name__ == "__main__":
             ]"""
     matrix = []
     sum = []
-    arr = []
     for _ in range(6):
-        arr.append(list(map(int, input().rstrip().split())))
+        matrix.append(list(map(int, input().rstrip().split())))
 
     for i in range(6):
         for j in range(6):
