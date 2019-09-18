@@ -12,10 +12,9 @@ class Difference:
         self.maximumDifference = 0
 
     def computeDifference(self):
-        try:
-            self.maximumDifference = max([abs(i-j) for i in self.__elements for j in self.__elements if i!=j])
-        except ValueError:
-            self.maximumDifference = 0
+        self.maximumDifference = max([abs(i-j) for i in self.__elements for j in self.__elements])
+
+
 # End of Difference class
 
 _ = input()
