@@ -31,3 +31,13 @@ class LinkedList:
             temp = temp.next
         temp.next = new_node
         return head
+
+
+if __name__ == '__main__':
+    n = int(input())
+    lk = LinkedList()
+    head = None
+    for i in range(n):
+        data = int(input())
+        head = lk.insert(head, data)
+    lk.display(head)
