@@ -12,3 +12,22 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+
+class LinkedList:
+    def display(self, head):
+        current = head
+        while current:
+            print(current.data, end=' ')
+            current = current.next
+
+    def insert(self, head, data):
+        new_node = Node(data)
+        if head == None:
+            # empty list
+            head = new_node
+            return head
+        temp = head
+        while temp.next is not None:
+            temp = temp.next
+        temp.next = new_node
+        return head
