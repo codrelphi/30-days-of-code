@@ -6,3 +6,11 @@
 # date (coding): 2019-10-01
 # source: https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem
 #=================================================================================
+import sys
+
+S = input().strip()
+try:
+    S = int(S)
+    print(S)
+except ValueError:
+    print('Bad String')
