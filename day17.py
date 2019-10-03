@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #=================================================================================
 # author: Chancerel Codjovi (aka codrelphi)
-# date: 2019-10-01
+# date: 2019-10-02
 # source: https://www.hackerrank.com/challenges/30-more-exceptions/problem
 #=================================================================================
 
@@ -21,4 +21,4 @@ for i in range(T):
         ans=myCalculator.power(n,p)
         print(ans)
     except Exception as e:
-        print(e)   
+        print(e)
