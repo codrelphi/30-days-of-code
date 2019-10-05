@@ -13,6 +13,7 @@ if __name__ == '__main__':
     a = list(map(int, input().strip().split(' ')))
 
     numberOfSwaps = 0
+    # bubble sort
     for i in range(n):
         for j in range(n-1):
             if a[j] > a[j+1]:
