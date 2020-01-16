@@ -2,6 +2,6 @@
 # -*- coding: utf-8 -*-
 #=================================================================================
 # author: Chancerel Codjovi (aka codrelphi)
-# date: 2020-01-10
+# date: 2020-01-16
 # source: https://www.hackerrank.com/challenges/30-bitwise-and/problem
 #=================================================================================
